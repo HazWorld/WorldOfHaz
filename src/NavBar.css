@@ -1,0 +1,65 @@
+/* Base navbar style */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    z-index: 1030;
+  }
+  
+  /* Brand title */
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* Nav link styles */
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    margin-right: 1rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+  /* Hover and active styles */
+  .navbar-dark .navbar-nav .nav-link:hover,
+  .navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  /* Optional: active underline bar effect */
+  .navbar-dark .nav-link.active {
+    position: relative;
+  }
+  
+  .navbar-dark .nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #61dafb; /* React blue */
+    border-radius: 2px;
+  }
+  
+  /* Ensure dropdowns look nice */
+  .dropdown-menu {
+    background-color: #343a40;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-item {
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #495057;
+  }
+  
+  /* Make body content not hide behind fixed navbar */
+  body {
+    padding-top: 70px;
+  }

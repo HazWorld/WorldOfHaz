@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
@@ -8,6 +9,8 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
 import { useEffect } from 'react';
+
+
 
 function App() {
 

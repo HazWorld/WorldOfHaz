@@ -39,5 +39,23 @@
 
 body {
   transition: background-color 0.3s ease;
-  min-height: 200vh; /* just to ensure scroll exists */
+  min-height: 300vh; /* just to ensure scroll exists */
+}
+
+/* App.css */
+
+@font-face {
+  font-family: 'Absans';
+  src: local('Absans'), local('Absans-Regular'),
+       /* Path is relative to this file (src/App.css) */
+       url('./assets/fonts/Absans-Regular.woff2') format('woff2'),
+       url('./assets/fonts/Absans-Regular.woff')  format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Absans', -apple-system, BlinkMacSystemFont,
+               'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
